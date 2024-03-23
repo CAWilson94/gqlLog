@@ -11,3 +11,11 @@ public class WorklogApplication {
 	}
 
 }
+
+/*
+ * TODO:
+ * Want to be able to add a new worklogitem
+ * Want to get all workLogitems
+ * Want to amend a single workLogItem
+ *
+ */
