@@ -1,0 +1,24 @@
+type Query {
+    WorkItemLogById(id: ID): WorkItemLog
+}
+
+type WorkItemLog {
+    id: ID,
+    date: String,
+    author: String,
+    estimatedLengthOfTime: Int,
+    actualLengthOfTime: Int,
+    workType: String,
+    department: String,
+}
+
+type WorkDay {
+    date: String,
+    workItems: [WorkItemLog]
+}
+
+type WorkWeek {
+    dateFrom: String,
+    dateTo: String,
+    workDays: [WorkDay],
+}
