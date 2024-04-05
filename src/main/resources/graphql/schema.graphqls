@@ -1,5 +1,6 @@
 type Query {
-    WorkItemLogById(id: ID): WorkItemLog
+    WorkItemLogById(id: ID): WorkItemLog,
+    AllWorkItemLogs: [WorkItemLog]
 }
 
 type WorkItemLog {

@@ -19,8 +19,11 @@ public record WorkItemLog(
     );
 
     public static WorkItemLog getById(String id){
-        System.out.println(workItems.toString());
         return workItems.stream().filter(workItem -> workItem.id().equals(id)).findFirst().orElse(null);
+    }
+
+    public static List<WorkItemLog> getAll(){
+        return workItems;
     }
 
 }
